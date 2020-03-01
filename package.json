@@ -1,8 +1,13 @@
 {
+	"scripts": {
+		"dev": "webpack --config webpack.config.js"
+	},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6"
+    "@babel/preset-env": "^7.8.6",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   },
   "browserslist": [
     "last 2 versions",
