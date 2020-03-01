@@ -19,7 +19,20 @@ module.exports = env => {
 			path: PATH_DIST,
 			filename: 'js/[name].[hash].js',
 		},
-	
+		// webpack-dev-server
+		devServer: {
+			contentBase: PATH_DIST,
+			host: 'localhost',
+			port: 8080,
+			// When using the HTML5 History API (you'll probably do this with React
+      		// later), index.html should be served in place of 404 responses.
+			historyApiFallback: true,
+			// full screen overlay in browser on error / warning
+			overlay: {
+				errors: true,
+				warnings: true,
+			}
+		},
 		module: {
 			rules: [
 				{
