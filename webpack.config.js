@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const PATH_SOURCE = path.join(__dirname, './src');
 const PATH_DIST = path.join(__dirname, './dist');
@@ -38,7 +39,15 @@ module.exports = env => {
 					}
 				}
 			]
-		}
+		},
+		plugins: [
+			// This plugin will generate an HTML5 file that imports all our Webpack
+      		// bundles using <script> tags. The file will be placed in `output.path`.
+      		// https://github.com/jantimon/html-webpack-plugin
+			new HtmlWebpackPlugin({
+				template: path.join(PATH_SOURCE, './index.html'),
+			}),
+		],
 	}
 	
 };
