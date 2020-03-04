@@ -1,3 +1,3 @@
-const greet = name => console.log(`Hello, ${name}`);
-
-greet(`pkro`);
+function x() {
+  console.log('hello world');
+}
