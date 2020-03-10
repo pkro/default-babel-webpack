@@ -29,6 +29,7 @@ module.exports = env => {
         errors: true,
         warnings: true,
       },
+      open: true,
     },
     module: {
       rules: [
