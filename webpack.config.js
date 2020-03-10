@@ -64,6 +64,13 @@ module.exports = env => {
             'sass-loader',
           ],
         },
+        {
+          test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/,
+          loader: 'file-loader',
+          options: {
+            outputPath: 'images',
+          },
+        },
       ],
     },
     plugins: [

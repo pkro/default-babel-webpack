@@ -1,4 +1,5 @@
 import './style.scss';
+import myImage from './static/wordreplace.png';
 
 var app =
   app ||
